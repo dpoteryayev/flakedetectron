@@ -1,0 +1,3 @@
+C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/CMakeFiles/torchscript_mask_rcnn.dir
+C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/CMakeFiles/edit_cache.dir
+C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/CMakeFiles/rebuild_cache.dir

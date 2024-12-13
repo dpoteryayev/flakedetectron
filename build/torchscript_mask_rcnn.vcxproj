@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9B23503C-1DEC-3998-B012-4D556799D1C2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <VcpkgEnabled>false</VcpkgEnabled>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>torchscript_mask_rcnn</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 12.4.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="do_not_import_user.props" Condition="exists('do_not_import_user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\dpoteryayev\1. PhD\FlakeDetectron\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">torchscript_mask_rcnn.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">torchscript_mask_rcnn</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\dpoteryayev\1. PhD\FlakeDetectron\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">torchscript_mask_rcnn.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">torchscript_mask_rcnn</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\dpoteryayev\1. PhD\FlakeDetectron\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">torchscript_mask_rcnn.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">torchscript_mask_rcnn</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\dpoteryayev\1. PhD\FlakeDetectron\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">torchscript_mask_rcnn.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">torchscript_mask_rcnn</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;PNG_FOUND;JPEG_FOUND;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;PNG_FOUND;JPEG_FOUND;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary "C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/Debug/torchscript_mask_rcnn.exe" -installedDir C:/vcpkg/installed/x64-windows/debug/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>-Wl,--no-as-needed;TorchVision::TorchVision-NOTFOUND;-Wl,--as-needed;C:\libtorch\lib\c10.lib;C:\libtorch\lib\kineto.lib;C:\libtorch\lib\caffe2_nvrtc.lib;C:\libtorch\lib\c10_cuda.lib;C:\libtorch\lib\caffe2_nvrtc.lib;C:\libtorch\lib\c10_cuda.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100d.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100d.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100d.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100d.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100d.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100d.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100d.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100d.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100d.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100d.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100d.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100d.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100d.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100d.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100d.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100d.lib;C:\libtorch\lib\torch.lib;C:\libtorch\lib\torch_cuda.lib;C:\libtorch\lib\torch_cpu.lib;-INCLUDE:?warp_size@cuda@at@@YAHXZ;C:\libtorch\lib\c10_cuda.lib;C:\libtorch\lib\c10.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\lib\x64\cudart.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\lib\x64\nvToolsExt64_1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>/lib;/lib/$(Configuration);/lib/intel64;/lib/intel64/$(Configuration);/lib/intel64_win;/lib/intel64_win/$(Configuration);/lib/win-x64;/lib/win-x64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/Debug/torchscript_mask_rcnn.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/Debug/torchscript_mask_rcnn.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <CudaLink>
+      <AdditionalOptions>-forward-unknown-to-host-compiler -Wno-deprecated-gpu-targets </AdditionalOptions>
+      <PerformDeviceLink>false</PerformDeviceLink>
+    </CudaLink>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PNG_FOUND;JPEG_FOUND;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PNG_FOUND;JPEG_FOUND;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary "C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/Release/torchscript_mask_rcnn.exe" -installedDir C:/vcpkg/installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>-Wl,--no-as-needed;TorchVision::TorchVision-NOTFOUND;-Wl,--as-needed;C:\libtorch\lib\c10.lib;C:\libtorch\lib\kineto.lib;C:\libtorch\lib\caffe2_nvrtc.lib;C:\libtorch\lib\c10_cuda.lib;C:\libtorch\lib\caffe2_nvrtc.lib;C:\libtorch\lib\c10_cuda.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\libtorch\lib\torch.lib;C:\libtorch\lib\torch_cuda.lib;C:\libtorch\lib\torch_cpu.lib;-INCLUDE:?warp_size@cuda@at@@YAHXZ;C:\libtorch\lib\c10_cuda.lib;C:\libtorch\lib\c10.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\lib\x64\cudart.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\lib\x64\nvToolsExt64_1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>/lib;/lib/$(Configuration);/lib/intel64;/lib/intel64/$(Configuration);/lib/intel64_win;/lib/intel64_win/$(Configuration);/lib/win-x64;/lib/win-x64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/Release/torchscript_mask_rcnn.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/Release/torchscript_mask_rcnn.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <CudaLink>
+      <AdditionalOptions>-forward-unknown-to-host-compiler -Wno-deprecated-gpu-targets </AdditionalOptions>
+      <PerformDeviceLink>false</PerformDeviceLink>
+    </CudaLink>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PNG_FOUND;JPEG_FOUND;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PNG_FOUND;JPEG_FOUND;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary "C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/MinSizeRel/torchscript_mask_rcnn.exe" -installedDir C:/vcpkg/installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>-Wl,--no-as-needed;TorchVision::TorchVision-NOTFOUND;-Wl,--as-needed;C:\libtorch\lib\c10.lib;C:\libtorch\lib\kineto.lib;C:\libtorch\lib\caffe2_nvrtc.lib;C:\libtorch\lib\c10_cuda.lib;C:\libtorch\lib\caffe2_nvrtc.lib;C:\libtorch\lib\c10_cuda.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\libtorch\lib\torch.lib;C:\libtorch\lib\torch_cuda.lib;C:\libtorch\lib\torch_cpu.lib;-INCLUDE:?warp_size@cuda@at@@YAHXZ;C:\libtorch\lib\c10_cuda.lib;C:\libtorch\lib\c10.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\lib\x64\cudart.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\lib\x64\nvToolsExt64_1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>/lib;/lib/$(Configuration);/lib/intel64;/lib/intel64/$(Configuration);/lib/intel64_win;/lib/intel64_win/$(Configuration);/lib/win-x64;/lib/win-x64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/MinSizeRel/torchscript_mask_rcnn.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/MinSizeRel/torchscript_mask_rcnn.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <CudaLink>
+      <AdditionalOptions>-forward-unknown-to-host-compiler -Wno-deprecated-gpu-targets </AdditionalOptions>
+      <PerformDeviceLink>false</PerformDeviceLink>
+    </CudaLink>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PNG_FOUND;JPEG_FOUND;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;PNG_FOUND;JPEG_FOUND;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noprofile -executionpolicy Bypass -file C:/vcpkg/scripts/buildsystems/msbuild/applocal.ps1 -targetBinary "C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/RelWithDebInfo/torchscript_mask_rcnn.exe" -installedDir C:/vcpkg/installed/x64-windows/bin -OutVariable out
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>-Wl,--no-as-needed;TorchVision::TorchVision-NOTFOUND;-Wl,--as-needed;C:\libtorch\lib\c10.lib;C:\libtorch\lib\kineto.lib;C:\libtorch\lib\caffe2_nvrtc.lib;C:\libtorch\lib\c10_cuda.lib;C:\libtorch\lib\caffe2_nvrtc.lib;C:\libtorch\lib\c10_cuda.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\opencv\build\x64\vc16\lib\opencv_world4100.lib;C:\libtorch\lib\torch.lib;C:\libtorch\lib\torch_cuda.lib;C:\libtorch\lib\torch_cpu.lib;-INCLUDE:?warp_size@cuda@at@@YAHXZ;C:\libtorch\lib\c10_cuda.lib;C:\libtorch\lib\c10.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\lib\x64\cudart.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.4\lib\x64\nvToolsExt64_1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>/lib;/lib/$(Configuration);/lib/intel64;/lib/intel64/$(Configuration);/lib/intel64_win;/lib/intel64_win/$(Configuration);/lib/win-x64;/lib/win-x64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/RelWithDebInfo/torchscript_mask_rcnn.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/RelWithDebInfo/torchscript_mask_rcnn.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <CudaLink>
+      <AdditionalOptions>-forward-unknown-to-host-compiler -Wno-deprecated-gpu-targets </AdditionalOptions>
+      <PerformDeviceLink>false</PerformDeviceLink>
+    </CudaLink>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\dpoteryayev\1. PhD\FlakeDetectron\detectron2\tools\deploy\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/dpoteryayev/1. PhD/FlakeDetectron/detectron2/tools/deploy/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/dpoteryayev/1. PhD/FlakeDetectron/detectron2/tools/deploy" "-BC:/Users/dpoteryayev/1. PhD/FlakeDetectron/build" --check-stamp-file "C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCUDAInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\NVIDIA.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindJPEG.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPNG.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPython.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCUDALinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\SelectLibraryConfigurations.cmake;C:\Users\dpoteryayev\1. PhD\FlakeDetectron\build\CMakeFiles\3.31.2\CMakeCCompiler.cmake;C:\Users\dpoteryayev\1. PhD\FlakeDetectron\build\CMakeFiles\3.31.2\CMakeCUDACompiler.cmake;C:\Users\dpoteryayev\1. PhD\FlakeDetectron\build\CMakeFiles\3.31.2\CMakeCXXCompiler.cmake;C:\Users\dpoteryayev\1. PhD\FlakeDetectron\build\CMakeFiles\3.31.2\CMakeRCCompiler.cmake;C:\Users\dpoteryayev\1. PhD\FlakeDetectron\build\CMakeFiles\3.31.2\CMakeSystem.cmake;C:\Users\dpoteryayev\1. PhD\FlakeDetectron\build\detect_cuda_compute_capabilities.cu;C:\Users\dpoteryayev\1. PhD\FlakeDetectron\build\detect_cuda_version.cc;C:\libtorch\share\cmake\Caffe2\Caffe2Config.cmake;C:\libtorch\share\cmake\Caffe2\Caffe2Targets-release.cmake;C:\libtorch\share\cmake\Caffe2\Caffe2Targets.cmake;C:\libtorch\share\cmake\Caffe2\FindCUDAToolkit.cmake;C:\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\FindCUDA.cmake;C:\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\CMakeInitializeConfigs.cmake;C:\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\FindCUDA.cmake;C:\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\FindCUDA\select_compute_arch.cmake;C:\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\FindPackageHandleStandardArgs.cmake;C:\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\FindPackageMessage.cmake;C:\libtorch\share\cmake\Caffe2\public\cuda.cmake;C:\libtorch\share\cmake\Caffe2\public\mkl.cmake;C:\libtorch\share\cmake\Caffe2\public\mkldnn.cmake;C:\libtorch\share\cmake\Caffe2\public\utils.cmake;C:\libtorch\share\cmake\Torch\TorchConfig.cmake;C:\libtorch\share\cmake\Torch\TorchConfigVersion.cmake;C:\opencv\build\x64\vc16\lib\OpenCVConfig-version.cmake;C:\opencv\build\x64\vc16\lib\OpenCVConfig.cmake;C:\opencv\build\x64\vc16\lib\OpenCVModules-debug.cmake;C:\opencv\build\x64\vc16\lib\OpenCVModules-release.cmake;C:\opencv\build\x64\vc16\lib\OpenCVModules.cmake;C:\vcpkg\installed\x64-windows\share\jpeg\vcpkg-cmake-wrapper.cmake;C:\vcpkg\installed\x64-windows\share\png\vcpkg-cmake-wrapper.cmake;C:\vcpkg\installed\x64-windows\share\zlib\vcpkg-cmake-wrapper.cmake;C:\vcpkg\scripts\buildsystems\vcpkg.cmake;C:\vision\build\TorchVisionConfig.cmake;C:\vision\build\TorchVisionConfigVersion.cmake;C:\vision\build\TorchVisionTargets.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\dpoteryayev\1. PhD\FlakeDetectron\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/dpoteryayev/1. PhD/FlakeDetectron/detectron2/tools/deploy/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/dpoteryayev/1. PhD/FlakeDetectron/detectron2/tools/deploy" "-BC:/Users/dpoteryayev/1. PhD/FlakeDetectron/build" --check-stamp-file "C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCUDAInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\NVIDIA.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindJPEG.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPNG.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPython.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCUDALinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\SelectLibraryConfigurations.cmake;C:\Users\dpoteryayev\1. PhD\FlakeDetectron\build\CMakeFiles\3.31.2\CMakeCCompiler.cmake;C:\Users\dpoteryayev\1. PhD\FlakeDetectron\build\CMakeFiles\3.31.2\CMakeCUDACompiler.cmake;C:\Users\dpoteryayev\1. PhD\FlakeDetectron\build\CMakeFiles\3.31.2\CMakeCXXCompiler.cmake;C:\Users\dpoteryayev\1. PhD\FlakeDetectron\build\CMakeFiles\3.31.2\CMakeRCCompiler.cmake;C:\Users\dpoteryayev\1. PhD\FlakeDetectron\build\CMakeFiles\3.31.2\CMakeSystem.cmake;C:\Users\dpoteryayev\1. PhD\FlakeDetectron\build\detect_cuda_compute_capabilities.cu;C:\Users\dpoteryayev\1. PhD\FlakeDetectron\build\detect_cuda_version.cc;C:\libtorch\share\cmake\Caffe2\Caffe2Config.cmake;C:\libtorch\share\cmake\Caffe2\Caffe2Targets-release.cmake;C:\libtorch\share\cmake\Caffe2\Caffe2Targets.cmake;C:\libtorch\share\cmake\Caffe2\FindCUDAToolkit.cmake;C:\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\FindCUDA.cmake;C:\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\CMakeInitializeConfigs.cmake;C:\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\FindCUDA.cmake;C:\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\FindCUDA\select_compute_arch.cmake;C:\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\FindPackageHandleStandardArgs.cmake;C:\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\FindPackageMessage.cmake;C:\libtorch\share\cmake\Caffe2\public\cuda.cmake;C:\libtorch\share\cmake\Caffe2\public\mkl.cmake;C:\libtorch\share\cmake\Caffe2\public\mkldnn.cmake;C:\libtorch\share\cmake\Caffe2\public\utils.cmake;C:\libtorch\share\cmake\Torch\TorchConfig.cmake;C:\libtorch\share\cmake\Torch\TorchConfigVersion.cmake;C:\opencv\build\x64\vc16\lib\OpenCVConfig-version.cmake;C:\opencv\build\x64\vc16\lib\OpenCVConfig.cmake;C:\opencv\build\x64\vc16\lib\OpenCVModules-debug.cmake;C:\opencv\build\x64\vc16\lib\OpenCVModules-release.cmake;C:\opencv\build\x64\vc16\lib\OpenCVModules.cmake;C:\vcpkg\installed\x64-windows\share\jpeg\vcpkg-cmake-wrapper.cmake;C:\vcpkg\installed\x64-windows\share\png\vcpkg-cmake-wrapper.cmake;C:\vcpkg\installed\x64-windows\share\zlib\vcpkg-cmake-wrapper.cmake;C:\vcpkg\scripts\buildsystems\vcpkg.cmake;C:\vision\build\TorchVisionConfig.cmake;C:\vision\build\TorchVisionConfigVersion.cmake;C:\vision\build\TorchVisionTargets.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\dpoteryayev\1. PhD\FlakeDetectron\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/dpoteryayev/1. PhD/FlakeDetectron/detectron2/tools/deploy/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/dpoteryayev/1. PhD/FlakeDetectron/detectron2/tools/deploy" "-BC:/Users/dpoteryayev/1. PhD/FlakeDetectron/build" --check-stamp-file "C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCUDAInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\NVIDIA.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindJPEG.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPNG.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPython.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCUDALinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\SelectLibraryConfigurations.cmake;C:\Users\dpoteryayev\1. PhD\FlakeDetectron\build\CMakeFiles\3.31.2\CMakeCCompiler.cmake;C:\Users\dpoteryayev\1. PhD\FlakeDetectron\build\CMakeFiles\3.31.2\CMakeCUDACompiler.cmake;C:\Users\dpoteryayev\1. PhD\FlakeDetectron\build\CMakeFiles\3.31.2\CMakeCXXCompiler.cmake;C:\Users\dpoteryayev\1. PhD\FlakeDetectron\build\CMakeFiles\3.31.2\CMakeRCCompiler.cmake;C:\Users\dpoteryayev\1. PhD\FlakeDetectron\build\CMakeFiles\3.31.2\CMakeSystem.cmake;C:\Users\dpoteryayev\1. PhD\FlakeDetectron\build\detect_cuda_compute_capabilities.cu;C:\Users\dpoteryayev\1. PhD\FlakeDetectron\build\detect_cuda_version.cc;C:\libtorch\share\cmake\Caffe2\Caffe2Config.cmake;C:\libtorch\share\cmake\Caffe2\Caffe2Targets-release.cmake;C:\libtorch\share\cmake\Caffe2\Caffe2Targets.cmake;C:\libtorch\share\cmake\Caffe2\FindCUDAToolkit.cmake;C:\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\FindCUDA.cmake;C:\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\CMakeInitializeConfigs.cmake;C:\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\FindCUDA.cmake;C:\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\FindCUDA\select_compute_arch.cmake;C:\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\FindPackageHandleStandardArgs.cmake;C:\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\FindPackageMessage.cmake;C:\libtorch\share\cmake\Caffe2\public\cuda.cmake;C:\libtorch\share\cmake\Caffe2\public\mkl.cmake;C:\libtorch\share\cmake\Caffe2\public\mkldnn.cmake;C:\libtorch\share\cmake\Caffe2\public\utils.cmake;C:\libtorch\share\cmake\Torch\TorchConfig.cmake;C:\libtorch\share\cmake\Torch\TorchConfigVersion.cmake;C:\opencv\build\x64\vc16\lib\OpenCVConfig-version.cmake;C:\opencv\build\x64\vc16\lib\OpenCVConfig.cmake;C:\opencv\build\x64\vc16\lib\OpenCVModules-debug.cmake;C:\opencv\build\x64\vc16\lib\OpenCVModules-release.cmake;C:\opencv\build\x64\vc16\lib\OpenCVModules.cmake;C:\vcpkg\installed\x64-windows\share\jpeg\vcpkg-cmake-wrapper.cmake;C:\vcpkg\installed\x64-windows\share\png\vcpkg-cmake-wrapper.cmake;C:\vcpkg\installed\x64-windows\share\zlib\vcpkg-cmake-wrapper.cmake;C:\vcpkg\scripts\buildsystems\vcpkg.cmake;C:\vision\build\TorchVisionConfig.cmake;C:\vision\build\TorchVisionConfigVersion.cmake;C:\vision\build\TorchVisionTargets.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\dpoteryayev\1. PhD\FlakeDetectron\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/dpoteryayev/1. PhD/FlakeDetectron/detectron2/tools/deploy/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/dpoteryayev/1. PhD/FlakeDetectron/detectron2/tools/deploy" "-BC:/Users/dpoteryayev/1. PhD/FlakeDetectron/build" --check-stamp-file "C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCUDAInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCheckCompilerFlagCommonPatterns.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeDependentOption.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCXXCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\CheckCXXSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Compiler\NVIDIA.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindJPEG.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPNG.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPython.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindPython\Support.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\FindZLIB.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCUDALinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCXXLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CMakeCommonLinkerInformation.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CheckCompilerFlag.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CheckFlagCommonConfig.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Internal\CheckSourceCompiles.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Linker\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows-NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.31\Modules\SelectLibraryConfigurations.cmake;C:\Users\dpoteryayev\1. PhD\FlakeDetectron\build\CMakeFiles\3.31.2\CMakeCCompiler.cmake;C:\Users\dpoteryayev\1. PhD\FlakeDetectron\build\CMakeFiles\3.31.2\CMakeCUDACompiler.cmake;C:\Users\dpoteryayev\1. PhD\FlakeDetectron\build\CMakeFiles\3.31.2\CMakeCXXCompiler.cmake;C:\Users\dpoteryayev\1. PhD\FlakeDetectron\build\CMakeFiles\3.31.2\CMakeRCCompiler.cmake;C:\Users\dpoteryayev\1. PhD\FlakeDetectron\build\CMakeFiles\3.31.2\CMakeSystem.cmake;C:\Users\dpoteryayev\1. PhD\FlakeDetectron\build\detect_cuda_compute_capabilities.cu;C:\Users\dpoteryayev\1. PhD\FlakeDetectron\build\detect_cuda_version.cc;C:\libtorch\share\cmake\Caffe2\Caffe2Config.cmake;C:\libtorch\share\cmake\Caffe2\Caffe2Targets-release.cmake;C:\libtorch\share\cmake\Caffe2\Caffe2Targets.cmake;C:\libtorch\share\cmake\Caffe2\FindCUDAToolkit.cmake;C:\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\FindCUDA.cmake;C:\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\CMakeInitializeConfigs.cmake;C:\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\FindCUDA.cmake;C:\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\FindCUDA\select_compute_arch.cmake;C:\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\FindPackageHandleStandardArgs.cmake;C:\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\FindPackageMessage.cmake;C:\libtorch\share\cmake\Caffe2\public\cuda.cmake;C:\libtorch\share\cmake\Caffe2\public\mkl.cmake;C:\libtorch\share\cmake\Caffe2\public\mkldnn.cmake;C:\libtorch\share\cmake\Caffe2\public\utils.cmake;C:\libtorch\share\cmake\Torch\TorchConfig.cmake;C:\libtorch\share\cmake\Torch\TorchConfigVersion.cmake;C:\opencv\build\x64\vc16\lib\OpenCVConfig-version.cmake;C:\opencv\build\x64\vc16\lib\OpenCVConfig.cmake;C:\opencv\build\x64\vc16\lib\OpenCVModules-debug.cmake;C:\opencv\build\x64\vc16\lib\OpenCVModules-release.cmake;C:\opencv\build\x64\vc16\lib\OpenCVModules.cmake;C:\vcpkg\installed\x64-windows\share\jpeg\vcpkg-cmake-wrapper.cmake;C:\vcpkg\installed\x64-windows\share\png\vcpkg-cmake-wrapper.cmake;C:\vcpkg\installed\x64-windows\share\zlib\vcpkg-cmake-wrapper.cmake;C:\vcpkg\scripts\buildsystems\vcpkg.cmake;C:\vision\build\TorchVisionConfig.cmake;C:\vision\build\TorchVisionConfigVersion.cmake;C:\vision\build\TorchVisionTargets.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\dpoteryayev\1. PhD\FlakeDetectron\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\dpoteryayev\1. PhD\FlakeDetectron\detectron2\tools\deploy\torchscript_mask_rcnn.cpp" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\dpoteryayev\1. PhD\FlakeDetectron\build\ZERO_CHECK.vcxproj">
+      <Project>{0C67F8F0-AD9D-3729-87DD-B0747D08BB1E}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 12.4.targets" />
+  </ImportGroup>
+</Project>
