@@ -34,8 +34,8 @@ dirs = setup_directories(BASE_DIR, ["logs", "checkpoints", "configs", "data"])
 
 if not (dirs["data"] / "train" / TRAIN_JSON).exists():
     raise FileNotFoundError(f"Training dataset JSON not found: {TRAIN_JSON}")
-if not (dirs["data"] / "val" / VAL_JSON).exists():
-    raise FileNotFoundError(f"Validation dataset JSON not found: {VAL_JSON}")
+# if not (dirs["data"] / "val" / VAL_JSON).exists():
+#     raise FileNotFoundError(f"Validation dataset JSON not found: {VAL_JSON}")
 # if not (dirs["data"] / "test" / TEST_JSON).exists():
 #     raise FileNotFoundError(f"Test dataset JSON not found: {TEST_JSON}")
 
@@ -104,8 +104,8 @@ if __name__ == "__main__":
     cfg = setup_cfg()
     # trainer = DefaultTrainer(cfg)
     trainer = TrainerWithTensorboard(cfg)
-    try:
-        trainer.train()
-    except Exception as e:
-        logger.error(f"Training failed: {e}")
-    raise
+    # try:
+    #     trainer.train()
+    # except Exception as e:
+    #     logger.error(f"Training failed: {e}")
+    # raise

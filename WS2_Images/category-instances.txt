@@ -1,0 +1,8 @@
+INFO:detectron2.data.datasets.coco:Loaded 5 images in COCO format from C:\Users\dpoteryayev\1. PhD\FlakeDetectron\WS2\data\train\labels_my-project-name_2024-12-10-04-46-10.json
+INFO:detectron2.data.build:Removed 0 images with no usable annotations. 5 images left.
+INFO:detectron2.data.build:Distribution of instances among all 3 categories:
+|  category  | #instances   |  category  | #instances   |  category  | #instances   |
+|:----------:|:-------------|:----------:|:-------------|:----------:|:-------------|
+|     ML     | 19           |     BL     | 2            |     FL     | 8            |
+|            |              |            |              |            |              |
+|   total    | 29           |            |              |            |              |
