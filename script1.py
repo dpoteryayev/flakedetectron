@@ -20,6 +20,7 @@ setup_logger()
 import numpy as np
 import os, json, cv2, random
 
+os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
 
 
 
@@ -48,7 +49,7 @@ predictor = DefaultPredictor(cfg)
 
 # Let's play a bit with a model using normal picture
 # Read the image
-image = cv2.imread(r"C:\Users\dpoteryayev\1. PhD\FlakeDetectron\BackyardGardenMicroWedding-27-2199992322.jpg")
+image = cv2.imread(r"C:/Users/dpoteryayev/1. PhD/FlakeDetectron/BackyardGardenMicroWedding-27-2199992322.jpg")
 
 # Rescaling
 scale_percent = 50  # Scale down to 50% of the original size

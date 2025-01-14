@@ -1,0 +1,8 @@
+INFO:detectron2.data.build:Removed 0 images with no usable annotations. 16 images left.
+INFO:detectron2.data.build:Distribution of instances among all 6 categories:
+|  category  | #instances   |  category  | #instances   |  category  | #instances   |
+|:----------:|:-------------|:----------:|:-------------|:----------:|:-------------|
+|    >=5L    | 27           |     5L     | 10           |     4L     | 6            |
+|     3L     | 3            |     2L     | 1            |     1L     | 0            |
+|            |              |            |              |            |              |
+|   total    | 47           |            |              |            |              |
