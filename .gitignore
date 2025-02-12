@@ -1,3 +1,4 @@
 build
 detectron2
 model_final.pth
+ninja
