@@ -4170,3 +4170,387 @@ events:
         5.0 
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "C:/libtorch/share/cmake/Caffe2/public/cuda.cmake:99 (try_run)"
+      - "C:/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "C:/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "CMakeLists.txt:8 (find_package)"
+    directories:
+      source: "C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/libtorch/share/cmake/Caffe2;C:/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+      VCPKG_INSTALLED_DIR: "C:/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/vcpkg"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): C:/Ninja/ninja.exe -v cmTC_fa50d
+        [1/2] C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP  -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\include" /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_fa50d.dir\\detect_cuda_version.cc.obj /FdCMakeFiles\\cmTC_fa50d.dir\\ /FS -c "C:\\Users\\dpoteryayev\\1. PhD\\FlakeDetectron\\build\\detect_cuda_version.cc"
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1942 --intdir=CMakeFiles\\cmTC_fa50d.dir --rc=rc --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_fa50d.dir\\detect_cuda_version.cc.obj  /out:cmTC_fa50d.exe /implib:cmTC_fa50d.lib /pdb:cmTC_fa50d.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\lib\\x64\\cudart_static.lib"  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        12.4
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "C:/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:113 (try_run)"
+      - "C:/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:173 (CUDA_DETECT_INSTALLED_GPUS)"
+      - "C:/libtorch/share/cmake/Caffe2/public/utils.cmake:333 (cuda_select_nvcc_arch_flags)"
+      - "C:/libtorch/share/cmake/Caffe2/public/cuda.cmake:327 (torch_cuda_get_nvcc_gencode_flag)"
+      - "C:/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "C:/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "CMakeLists.txt:8 (find_package)"
+    directories:
+      source: "C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_FLAGS: "-D_WINDOWS -Xcompiler=\"/W3 /GR /EHsc\""
+      CMAKE_CUDA_FLAGS_DEBUG: "-Xcompiler=\"-MDd  -Zi -Ob0 -Od /RTC1\""
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/libtorch/share/cmake/Caffe2;C:/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+      VCPKG_INSTALLED_DIR: "C:/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/vcpkg"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): C:/Ninja/ninja.exe -v cmTC_ae1cd
+        [1/2] C:\\PROGRA~1\\NVIDIA~2\\CUDA\\v12.4\\bin\\nvcc.exe -forward-unknown-to-host-compiler   -D_WINDOWS -Xcompiler="/W3 /GR /EHsc"  -Xcompiler="-MDd  -Zi -Ob0 -Od /RTC1" -MD -MT CMakeFiles\\cmTC_ae1cd.dir\\detect_cuda_compute_capabilities.cu.obj -MF CMakeFiles\\cmTC_ae1cd.dir\\detect_cuda_compute_capabilities.cu.obj.d -x cu -c "C:\\Users\\dpoteryayev\\1. PhD\\FlakeDetectron\\build\\detect_cuda_compute_capabilities.cu" -o CMakeFiles\\cmTC_ae1cd.dir\\detect_cuda_compute_capabilities.cu.obj -Xcompiler=-FdCMakeFiles\\cmTC_ae1cd.dir\\,-FS
+        detect_cuda_compute_capabilities.cu\x0d
+        tmpxft_000031e0_00000000-10_detect_cuda_compute_capabilities.cudafe1.cpp\x0d
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_ae1cd.dir --rc=rc --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_ae1cd.dir\\detect_cuda_compute_capabilities.cu.obj  /out:cmTC_ae1cd.exe /implib:cmTC_ae1cd.lib /pdb:cmTC_ae1cd.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL  cudadevrt.lib  cudart_static.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib -LIBPATH:"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.4/lib/x64" && cd ."
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        5.0 
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "C:/libtorch/share/cmake/Caffe2/public/cuda.cmake:99 (try_run)"
+      - "C:/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "C:/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "CMakeLists.txt:8 (find_package)"
+    directories:
+      source: "C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/libtorch/share/cmake/Caffe2;C:/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+      VCPKG_INSTALLED_DIR: "C:/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/vcpkg"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): C:/Ninja/ninja.exe -v cmTC_2a69c
+        [1/2] C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP  -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\include" /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_2a69c.dir\\detect_cuda_version.cc.obj /FdCMakeFiles\\cmTC_2a69c.dir\\ /FS -c "C:\\Users\\dpoteryayev\\1. PhD\\FlakeDetectron\\build\\detect_cuda_version.cc"
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1942 --intdir=CMakeFiles\\cmTC_2a69c.dir --rc=rc --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_2a69c.dir\\detect_cuda_version.cc.obj  /out:cmTC_2a69c.exe /implib:cmTC_2a69c.lib /pdb:cmTC_2a69c.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\lib\\x64\\cudart_static.lib"  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        12.4
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "C:/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:113 (try_run)"
+      - "C:/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:173 (CUDA_DETECT_INSTALLED_GPUS)"
+      - "C:/libtorch/share/cmake/Caffe2/public/utils.cmake:333 (cuda_select_nvcc_arch_flags)"
+      - "C:/libtorch/share/cmake/Caffe2/public/cuda.cmake:327 (torch_cuda_get_nvcc_gencode_flag)"
+      - "C:/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "C:/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "CMakeLists.txt:8 (find_package)"
+    directories:
+      source: "C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_FLAGS: "-D_WINDOWS -Xcompiler=\"/W3 /GR /EHsc\""
+      CMAKE_CUDA_FLAGS_DEBUG: "-Xcompiler=\"-MDd  -Zi -Ob0 -Od /RTC1\""
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/libtorch/share/cmake/Caffe2;C:/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+      VCPKG_INSTALLED_DIR: "C:/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/vcpkg"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): C:/Ninja/ninja.exe -v cmTC_07e99
+        [1/2] C:\\PROGRA~1\\NVIDIA~2\\CUDA\\v12.4\\bin\\nvcc.exe -forward-unknown-to-host-compiler   -D_WINDOWS -Xcompiler="/W3 /GR /EHsc"  -Xcompiler="-MDd  -Zi -Ob0 -Od /RTC1" -MD -MT CMakeFiles\\cmTC_07e99.dir\\detect_cuda_compute_capabilities.cu.obj -MF CMakeFiles\\cmTC_07e99.dir\\detect_cuda_compute_capabilities.cu.obj.d -x cu -c "C:\\Users\\dpoteryayev\\1. PhD\\FlakeDetectron\\build\\detect_cuda_compute_capabilities.cu" -o CMakeFiles\\cmTC_07e99.dir\\detect_cuda_compute_capabilities.cu.obj -Xcompiler=-FdCMakeFiles\\cmTC_07e99.dir\\,-FS
+        detect_cuda_compute_capabilities.cu\x0d
+        tmpxft_00001260_00000000-10_detect_cuda_compute_capabilities.cudafe1.cpp\x0d
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_07e99.dir --rc=rc --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_07e99.dir\\detect_cuda_compute_capabilities.cu.obj  /out:cmTC_07e99.exe /implib:cmTC_07e99.lib /pdb:cmTC_07e99.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL  cudadevrt.lib  cudart_static.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib -LIBPATH:"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.4/lib/x64" && cd ."
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        5.0 
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "C:/libtorch/share/cmake/Caffe2/public/cuda.cmake:99 (try_run)"
+      - "C:/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "C:/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "CMakeLists.txt:8 (find_package)"
+    directories:
+      source: "C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/libtorch/share/cmake/Caffe2;C:/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+      VCPKG_INSTALLED_DIR: "C:/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/vcpkg"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): C:/Ninja/ninja.exe -v cmTC_6ca79
+        [1/2] C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP  -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\include" /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_6ca79.dir\\detect_cuda_version.cc.obj /FdCMakeFiles\\cmTC_6ca79.dir\\ /FS -c "C:\\Users\\dpoteryayev\\1. PhD\\FlakeDetectron\\build\\detect_cuda_version.cc"
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1942 --intdir=CMakeFiles\\cmTC_6ca79.dir --rc=rc --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_6ca79.dir\\detect_cuda_version.cc.obj  /out:cmTC_6ca79.exe /implib:cmTC_6ca79.lib /pdb:cmTC_6ca79.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\lib\\x64\\cudart_static.lib"  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        12.4
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "C:/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:113 (try_run)"
+      - "C:/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:173 (CUDA_DETECT_INSTALLED_GPUS)"
+      - "C:/libtorch/share/cmake/Caffe2/public/utils.cmake:333 (cuda_select_nvcc_arch_flags)"
+      - "C:/libtorch/share/cmake/Caffe2/public/cuda.cmake:327 (torch_cuda_get_nvcc_gencode_flag)"
+      - "C:/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "C:/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "CMakeLists.txt:8 (find_package)"
+    directories:
+      source: "C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_FLAGS: "-D_WINDOWS -Xcompiler=\"/W3 /GR /EHsc\""
+      CMAKE_CUDA_FLAGS_DEBUG: "-Xcompiler=\"-MDd  -Zi -Ob0 -Od /RTC1\""
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/libtorch/share/cmake/Caffe2;C:/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+      VCPKG_INSTALLED_DIR: "C:/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/vcpkg"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): C:/Ninja/ninja.exe -v cmTC_29553
+        [1/2] C:\\PROGRA~1\\NVIDIA~2\\CUDA\\v12.4\\bin\\nvcc.exe -forward-unknown-to-host-compiler   -D_WINDOWS -Xcompiler="/W3 /GR /EHsc"  -Xcompiler="-MDd  -Zi -Ob0 -Od /RTC1" -MD -MT CMakeFiles\\cmTC_29553.dir\\detect_cuda_compute_capabilities.cu.obj -MF CMakeFiles\\cmTC_29553.dir\\detect_cuda_compute_capabilities.cu.obj.d -x cu -c "C:\\Users\\dpoteryayev\\1. PhD\\FlakeDetectron\\build\\detect_cuda_compute_capabilities.cu" -o CMakeFiles\\cmTC_29553.dir\\detect_cuda_compute_capabilities.cu.obj -Xcompiler=-FdCMakeFiles\\cmTC_29553.dir\\,-FS
+        detect_cuda_compute_capabilities.cu\x0d
+        tmpxft_000000f0_00000000-10_detect_cuda_compute_capabilities.cudafe1.cpp\x0d
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_29553.dir --rc=rc --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_29553.dir\\detect_cuda_compute_capabilities.cu.obj  /out:cmTC_29553.exe /implib:cmTC_29553.lib /pdb:cmTC_29553.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL  cudadevrt.lib  cudart_static.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib -LIBPATH:"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.4/lib/x64" && cd ."
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        5.0 
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "C:/libtorch/share/cmake/Caffe2/public/cuda.cmake:99 (try_run)"
+      - "C:/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "C:/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "CMakeLists.txt:8 (find_package)"
+    directories:
+      source: "C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/libtorch/share/cmake/Caffe2;C:/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+      VCPKG_INSTALLED_DIR: "C:/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/vcpkg"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): C:/Ninja/ninja.exe -v cmTC_a72c5
+        [1/2] C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP  -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\include" /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_a72c5.dir\\detect_cuda_version.cc.obj /FdCMakeFiles\\cmTC_a72c5.dir\\ /FS -c "C:\\Users\\dpoteryayev\\1. PhD\\FlakeDetectron\\build\\detect_cuda_version.cc"
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1942 --intdir=CMakeFiles\\cmTC_a72c5.dir --rc=rc --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_a72c5.dir\\detect_cuda_version.cc.obj  /out:cmTC_a72c5.exe /implib:cmTC_a72c5.lib /pdb:cmTC_a72c5.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\lib\\x64\\cudart_static.lib"  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        FAILED: cmTC_a72c5.exe 
+        C:\\Windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1942 --intdir=CMakeFiles\\cmTC_a72c5.dir --rc=rc --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_a72c5.dir\\detect_cuda_version.cc.obj  /out:cmTC_a72c5.exe /implib:cmTC_a72c5.lib /pdb:cmTC_a72c5.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\lib\\x64\\cudart_static.lib"  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        FINAL LINK: command "C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_a72c5.dir\\detect_cuda_version.cc.obj /out:cmTC_a72c5.exe /implib:cmTC_a72c5.lib /pdb:cmTC_a72c5.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\lib\\x64\\cudart_static.lib kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\\cmTC_a72c5.dir/intermediate.manifest CMakeFiles\\cmTC_a72c5.dir/manifest.res" failed (exit code 1168) with the following output:
+        LINK : fatal error LNK1168: cannot open cmTC_a72c5.exe for writing\x0d
+        ninja: build stopped: subcommand failed.
+        
+      exitCode: 1
+    runResult:
+      variable: "run_result"
+      cached: true
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "C:/libtorch/share/cmake/Caffe2/public/cuda.cmake:99 (try_run)"
+      - "C:/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "C:/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "CMakeLists.txt:8 (find_package)"
+    directories:
+      source: "C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/libtorch/share/cmake/Caffe2;C:/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+      VCPKG_INSTALLED_DIR: "C:/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/vcpkg"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): C:/Ninja/ninja.exe -v cmTC_07d80
+        [1/2] C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\cl.exe  /nologo /TP  -I"C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\include" /DWIN32 /D_WINDOWS /W3 /GR /EHsc  /MDd /Zi /Ob0 /Od /RTC1 /showIncludes /FoCMakeFiles\\cmTC_07d80.dir\\detect_cuda_version.cc.obj /FdCMakeFiles\\cmTC_07d80.dir\\ /FS -c "C:\\Users\\dpoteryayev\\1. PhD\\FlakeDetectron\\build\\detect_cuda_version.cc"
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --msvc-ver=1942 --intdir=CMakeFiles\\cmTC_07d80.dir --rc=rc --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_07d80.dir\\detect_cuda_version.cc.obj  /out:cmTC_07d80.exe /implib:cmTC_07d80.lib /pdb:cmTC_07d80.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL /subsystem:console  "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.4\\lib\\x64\\cudart_static.lib"  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        12.4
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "C:/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:113 (try_run)"
+      - "C:/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake:173 (CUDA_DETECT_INSTALLED_GPUS)"
+      - "C:/libtorch/share/cmake/Caffe2/public/utils.cmake:333 (cuda_select_nvcc_arch_flags)"
+      - "C:/libtorch/share/cmake/Caffe2/public/cuda.cmake:327 (torch_cuda_get_nvcc_gencode_flag)"
+      - "C:/libtorch/share/cmake/Caffe2/Caffe2Config.cmake:86 (include)"
+      - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "C:/libtorch/share/cmake/Torch/TorchConfig.cmake:68 (find_package)"
+      - "C:/vcpkg/scripts/buildsystems/vcpkg.cmake:859 (_find_package)"
+      - "CMakeLists.txt:8 (find_package)"
+    directories:
+      source: "C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/CMakeFiles/CMakeTmp"
+      binary: "C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CUDA_FLAGS: "-D_WINDOWS -Xcompiler=\"/W3 /GR /EHsc\""
+      CMAKE_CUDA_FLAGS_DEBUG: "-Xcompiler=\"-MDd  -Zi -Ob0 -Od /RTC1\""
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+      CMAKE_MODULE_PATH: "C:/libtorch/share/cmake/Caffe2;C:/libtorch/share/cmake/Caffe2/public/../Modules_CUDA_fix"
+      VCPKG_INSTALLED_DIR: "C:/vcpkg/installed"
+      VCPKG_PREFER_SYSTEM_LIBS: "OFF"
+      VCPKG_TARGET_TRIPLET: "x64-windows"
+      Z_VCPKG_ROOT_DIR: "C:/vcpkg"
+    buildResult:
+      variable: "compile_result"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/dpoteryayev/1. PhD/FlakeDetectron/build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): C:/Ninja/ninja.exe -v cmTC_d3510
+        [1/2] C:\\PROGRA~1\\NVIDIA~2\\CUDA\\v12.4\\bin\\nvcc.exe -forward-unknown-to-host-compiler   -D_WINDOWS -Xcompiler="/W3 /GR /EHsc"  -Xcompiler="-MDd  -Zi -Ob0 -Od /RTC1" -MD -MT CMakeFiles\\cmTC_d3510.dir\\detect_cuda_compute_capabilities.cu.obj -MF CMakeFiles\\cmTC_d3510.dir\\detect_cuda_compute_capabilities.cu.obj.d -x cu -c "C:\\Users\\dpoteryayev\\1. PhD\\FlakeDetectron\\build\\detect_cuda_compute_capabilities.cu" -o CMakeFiles\\cmTC_d3510.dir\\detect_cuda_compute_capabilities.cu.obj -Xcompiler=-FdCMakeFiles\\cmTC_d3510.dir\\,-FS
+        detect_cuda_compute_capabilities.cu\x0d
+        tmpxft_00004330_00000000-10_detect_cuda_compute_capabilities.cudafe1.cpp\x0d
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && "C:\\Program Files\\CMake\\bin\\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\\cmTC_d3510.dir --rc=rc --mt=C:\\PROGRA~2\\WI3CF2~1\\10\\bin\\100226~1.0\\x64\\mt.exe --manifests  -- C:\\PROGRA~2\\MICROS~2\\2022\\BUILDT~1\\VC\\Tools\\MSVC\\1442~1.344\\bin\\Hostx64\\x64\\link.exe /nologo CMakeFiles\\cmTC_d3510.dir\\detect_cuda_compute_capabilities.cu.obj  /out:cmTC_d3510.exe /implib:cmTC_d3510.lib /pdb:cmTC_d3510.pdb /version:0.0 /machine:x64  /debug /INCREMENTAL  cudadevrt.lib  cudart_static.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib -LIBPATH:"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.4/lib/x64" && cd ."
+        
+      exitCode: 0
+    runResult:
+      variable: "run_result"
+      cached: true
+      stdout: |
+        5.0 
+      exitCode: 0
+...
